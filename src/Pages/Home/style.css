@@ -1,0 +1,395 @@
+
+.hero-heading , .ExploreAll {
+  font-family: 'Valencia Serial', serif; /* Use Valencia Serial, fallback to serif */
+}
+
+.ExploreAllP1 , .ExploreAllP2 {
+  font-size: 0.8em;
+}
+
+
+
+.hero_1 {
+  position: relative;
+  height: 120vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero_1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/images/hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  filter: brightness(0.75); 
+  z-index: 0; /* Pseudo-element behind the content */
+}
+
+.hero_1 > * {
+  position: relative;
+  z-index: 1;  /* Content stays on top of the pseudo-element */
+}
+
+
+.navbar {
+  padding-top: 20px; /* Adjust top padding */
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin-right: 1rem; /* Adjust space between items */
+}
+
+.BtnContact {
+  background-color: rgb(242, 121, 69) !important;  /* Match the button color */
+  padding: 10px 25px!important; 
+  border-radius: 30px!important; 
+  color: white;
+}
+.BtnContact:hover{
+    background-color: rgb(128, 128, 128,0.5) !important;
+    color: white;
+    border: 1x solid white;
+   box-shadow: 0px 0px 10px 0px white;
+    transition: 0.2s ease-in;
+}
+
+.planeImage img {
+  height: 75vh;
+  border: 10px solid white;
+  margin-top: 10vh;
+  z-index: -1;
+  width: 30vw;
+}
+
+.GirlBags img {
+  border: 10px solid white;
+  height: 45vh;
+  margin-top: 17vh;
+  width: 17vw;
+}
+
+.GirlBags {
+  z-index: 2;
+}
+
+.Services{
+  background-color: #f7f7f7;
+  height: 60vh;
+}
+
+
+.svgIcon{
+  height: 9vh;
+  background-color: rgb(242, 121, 69,0.25);
+  border-radius: 50px;
+  padding: 6px;
+}
+
+
+
+/* Slider images should be responsive */
+.img-body img {
+  display: flex;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  max-width: 250px; /* Max width for larger screens */
+  height: auto;
+  border-radius: 15px;
+}
+
+.SliderContainer2 {
+  width: 98.7vw;
+}
+
+.img-body2 img {
+  display: flex;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 15vw; /* Adjust width as needed */
+  max-width: 150px; /* Adjust max-width as needed */
+  height: 10vh;
+  border-radius: 50%; /* Set for rounded corners */
+}
+
+
+.img-body2 img {
+  display: flex;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 5vw;
+  max-width: 250px; /* Max width for larger screens */
+  height: 10vh;
+  border-radius: 85px;
+
+}
+
+/* Full width for the container */
+.SliderContainer {
+  width: 98.7vw;
+  padding: 0;
+  margin: 0;
+}
+
+.SliderContainer2 {
+  width: 98.7vw;
+  /* height: 70vh; */
+
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100vw;
+}
+
+/* Adjust image to fit the container */
+.img-body img {
+  margin: 0 auto;
+  object-fit: cover;
+  aspect-ratio: 1/2;
+  width: 100%;
+  height: auto;
+  max-height: 50vh; /* Keep a max height for consistency */
+  border-radius: 15px;
+}
+
+
+
+
+/* Default state for all dots */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 13px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 20px;
+  content: '•';  /* Dot symbol */
+  text-align: center;
+  opacity: .25;  /* Inactive dot opacity */
+  color: orange !important; /* Inactive dot color */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Active state for the currently selected dot */
+.slick-dots li.slick-active button:before {
+  opacity: .75;  /* Higher opacity for the active dot */
+  color: orange; /* Active dot color */
+  border-radius: 20px;
+  padding: -2px; /* Adjust padding if necessary */
+}
+
+
+.Cards{
+  height: 95vh;
+}
+.cardSection{
+  margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .img-body img {
+    max-width: 200px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .img-body img {
+    max-width: 150px;
+  }
+
+  .img-body2 img {
+    display: flex;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 22vw;
+    max-width: 250px; /* Max width for larger screens */
+    height: 13vh;
+    border-radius: 85px;
+  
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Medium screens (tablets, small desktops) */
+@media (max-width: 992px) {
+  .planeImage img {
+    height: 50vh;
+    margin-top: 5vh;
+    width: 90vw;
+  }
+
+  .GirlBags img {
+    height: 35vh;
+    margin-top: 10vh;
+    width: 90vw;
+
+    .Services{
+      background-color: #f7f7f7;
+     
+    }
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .planeImage img {
+    height: 40vh;
+    margin-top: 5vh;
+  }
+
+  .GirlBags img {
+    height: 30vh;
+    margin-top: 10vh;
+    width: 90vw;
+  }
+
+  .Services{
+    background-color: #f7f7f7;
+    height: 130vh;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .BtnContact {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Very small screens (small phones) */
+@media (max-width: 576px) {
+  .planeImage img {
+    height: 30vh;
+    margin-top: 3vh;
+  }
+
+  .GirlBags img {
+    height: 25vh;
+    margin-top: 5vh;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .BtnContact {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Minimum height adjustment */
+@media (min-height: 844px) {
+  .planeImage img {
+    height: 15vh;
+    z-index: -1;
+  }
+
+  .GirlBags img {
+    height: 45vh;
+    margin-top: 17vh;
+  }
+}
+
+
+@media (max-width: 528px) {
+  .Cards {
+    height: 52vh;
+    width: 93vw;
+    margin-top: 40px;
+  }  
+  .Services {
+    background-color: #f7f7f7;
+    height: 107vh;
+}
+
+.cardSection{
+  margin-top: 0px;
+}
+}
+
+
+
+
+@media (max-width: 768px) {
+  .Cards {
+    height: 52vh;
+    width: 93vw;
+    margin-top: 40px;
+  }  
+  .Services {
+    background-color: #f7f7f7;
+    height: 107vh;
+}
+
+.cardSection{
+  margin-top: 0px;
+}
+}
+
